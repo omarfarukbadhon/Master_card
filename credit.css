@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=PT+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transform: translate(-120px, -70px);
+    background: radial-gradient(circle, red, yellow, green);
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, red, yellow, green);
+    transform: translate(120px, 70px);
+}
+
+.container{
+    width: 250px;
+    height: 150px;
+}
+
+.container .card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 25, 25, 0.1);
+    z-index: 100;
+    border-radius: 12px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+.font-part .first{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 20px;
+}
+
+.font-part .circle{
+    width: 40px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.font-part .chip{
+    width: 35px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+.font-part .master{
+    color: white;
+    font-weight: 500;
+}
+
+.font-part .card-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.font-part .number-title{
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.font-part .extra-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.font-part .exp{
+    margin-left: 45px;
+}
+
+.font-part .valid,
+.font-part .year{
+    font-size: 12px;
+}
